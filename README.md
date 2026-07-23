@@ -4,6 +4,36 @@ Robotics, dexterous manipulation, teleoperation, and embodied AI experiments.
 
 I am currently building practical robot teleoperation systems around MuJoCo, DexJoCo, ROS2, camera-based hand tracking, and dexterous robot hands.
 
+## Visual Portfolio
+
+### CR3 + CRAFT Teleoperation
+
+![CR3 CRAFT teleoperation demo](assets/gallery/cr3_craft_x_axis_teleop.gif)
+
+| CR3 + CRAFT shell scene | Multi-camera MuJoCo views |
+|---|---|
+| ![CR3 CRAFT shell scene](assets/gallery/cr3_craft_shell_preview.png) | ![CR3 CRAFT camera grid](assets/gallery/cr3_craft_camera_grid.png) |
+
+### DexJoCo Task Scenes
+
+| Bimanual assembly | Click-mouse task |
+|---|---|
+| ![DexJoCo bimanual assembly](assets/gallery/dexjoco_bimanual_assembly.png) | ![DexJoCo click mouse task](assets/gallery/dexjoco_mouse_task.png) |
+
+| Hammer task | Plant task |
+|---|---|
+| ![DexJoCo hammer task](assets/gallery/dexjoco_hammer_task.png) | ![DexJoCo plant task](assets/gallery/dexjoco_plant_task.png) |
+
+### Engineering Artifacts
+
+| CR3 workspace analysis | Projection analysis |
+|---|---|
+| ![CR3 workspace analysis](assets/gallery/cr3_workspace_analysis.png) | ![CR3 workspace projections](assets/gallery/cr3_workspace_projections.png) |
+
+| Workstation CAD mockup |
+|---|
+| ![Workstation CAD mockup](assets/gallery/workstation_cad.jpg) |
+
 ## Current Focus
 
 - CR3 robot arm and CRAFT dexterous hand simulation.
@@ -42,9 +72,9 @@ The main recent work is the CR3 + CRAFT integration:
 - connected CR3 arm + CRAFT hand assets into DexJoCo scenes;
 - tested teleoperation entry scripts;
 - documented handoff notes and Windows/WSL setup.
+- collected project visuals into this profile as a lightweight robotics portfolio.
 
 Start here:
 
 - [CR3 + CRAFT Teleop Showcase](https://github.com/fslee2/cr3-craft-teleop-showcase)
 - [CR3 MuJoCo / URDF Assets](https://github.com/fslee2/cr3-robot-description-assets)
-
