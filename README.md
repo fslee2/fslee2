@@ -63,6 +63,7 @@ Right now I am focusing on:
 | Project | What it is about | Main stack |
 |---|---|---|
 | [cr3-craft-teleop-showcase](https://github.com/fslee2/cr3-craft-teleop-showcase) | CR3 + CRAFT DexJoCo integration and teleop demos | Python, MuJoCo, DexJoCo |
+| [cr3-robot-description-assets](https://github.com/fslee2/cr3-robot-description-assets) | Standalone CR3 URDF, STL meshes, and MoveIt config assets | ROS2, URDF, STL |
 | [Dobot-CraftHand](https://github.com/fslee2/Dobot-CraftHand) | CRAFT hand and robot control experiments | Python |
 | [Lerobot_robomimic](https://github.com/fslee2/Lerobot_robomimic) | Imitation learning and robot learning experiments | Python |
 | [JetArm-Dummy](https://github.com/fslee2/JetArm-Dummy) | Master-slave teleoperation between JetArm and Dummy | C |
@@ -100,4 +101,3 @@ I like systems where the interface is physical and the feedback is immediate:
 - a messy prototype slowly becoming a usable robotics tool.
 
 That is the part of robotics I care about most: getting ideas out of papers and into working loops.
-
