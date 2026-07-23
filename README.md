@@ -1,47 +1,57 @@
 # Yujie Pang / fslee2
 
-Robotics, tactile manipulation, teleoperation, and embodied AI experiments.
+Robotics, bimanual imitation learning, dexterous manipulation, teleoperation, and embodied AI experiments.
 
-I am currently building practical robot manipulation systems around MuJoCo, ROS2, camera-based teleoperation, tactile contact control, and dexterous robot hands.
+I build small but complete robot systems: simulation assets, control scripts, camera/VR teleoperation tests, and imitation-learning pipelines that can move from a local prototype toward a publishable project.
 
-## Lab Robotics Portfolio
+## Project Snapshots
 
-### Real Robot Setup
+### Bimanual Imitation
+
+Workspace: `F:\Mys_lab_data_bak\bimanual-imitation`
+
+![Bimanual policy rollout](assets/bimanual/bimanual_policy_rollout.gif)
+
+![Bimanual validation frame](assets/bimanual/bimanual_validation_frame.jpg)
+
+This project focuses on two-arm manipulation, LeRobot-style datasets, ACT-style policy inference, and MuJoCo validation rollouts.
+
+### CR3 + CRAFT in DexJoCo
+
+![CR3 CRAFT teleoperation demo](assets/dexjoco/cr3_craft_teleop.gif)
+
+![CR3 CRAFT shell scene](assets/dexjoco/cr3_craft_shell_scene.jpg)
+
+![CR3 CRAFT camera grid](assets/dexjoco/cr3_craft_camera_grid.jpg)
+
+This work connects a CR3 arm and CRAFT dexterous hand into DexJoCo-style MuJoCo environments, with reusable XML/MJCF assets and teleoperation entry scripts.
+
+### CRAFT Hand / Real Robot Contact Work
 
 ![Real robot tactile manipulation setup](assets/lab/real_robot_setup.jpg)
 
-### Real-to-Sim Manipulation
-
 ![Real-to-simulation abstraction for contact manipulation](assets/lab/real_to_sim_abstraction.jpg)
 
-| Simulation spawn setup | Contact observation |
-|---|---|
-| ![Robot simulation spawn setup](assets/lab/robot_simulation_spawn.jpg) | ![Tactile contact closeup](assets/lab/tactile_contact_closeup.jpg) |
+![Tactile contact closeup](assets/lab/tactile_contact_closeup.jpg)
 
-### Tactile Control Results
-
-| Touch coverage | Force-safety comparison |
-|---|---|
-| ![Touch coverage distribution](assets/lab/touch_coverage_distribution.jpg) | ![Force safety comparison](assets/lab/force_safety_comparison.jpg) |
+This line of work is about contact-rich manipulation: real setup capture, simulation abstraction, tactile/contact observations, and robot-control experiments.
 
 ## Current Focus
 
-- Real robot manipulation with tactile/contact feedback.
-- Real-to-simulation abstraction for contact-rich manipulation tasks.
-- MuJoCo task environments for robot teleoperation and policy testing.
-- Human input interfaces using cameras, keyboard control, and VR experiments.
+- Bimanual imitation learning and policy validation.
+- CR3 arm + CRAFT hand simulation assets.
+- MuJoCo / DexJoCo task environments for robot teleoperation.
+- Camera, keyboard, and VR input interfaces for robot control.
 - Lightweight alternatives to heavy monocular 3D hand reconstruction.
-- Imitation learning and robot-control pipelines.
+- Real-to-simulation workflows for contact manipulation.
 
-## Featured Projects
+## Featured Repositories
 
-| Project | What it contains | Stack |
-|---|---|---|
-| [cr3-craft-teleop-showcase](https://github.com/fslee2/cr3-craft-teleop-showcase) | CR3 + CRAFT DexJoCo integration, teleop scripts, and handoff notes | Python, MuJoCo, DexJoCo |
-| [cr3-robot-description-assets](https://github.com/fslee2/cr3-robot-description-assets) | MuJoCo XML / MJCF and URDF assets for CR3 + CRAFT simulation | MuJoCo, URDF, ROS2 |
-| [Dobot-CraftHand](https://github.com/fslee2/Dobot-CraftHand) | CRAFT hand and robot-control experiments | Python |
-| [Lerobot_robomimic](https://github.com/fslee2/Lerobot_robomimic) | Robot learning and imitation-learning experiments | Python |
-| [JetArm-Dummy](https://github.com/fslee2/JetArm-Dummy) | Master-slave teleoperation between JetArm and Dummy | C |
+- [cr3-craft-teleop-showcase](https://github.com/fslee2/cr3-craft-teleop-showcase): CR3 + CRAFT DexJoCo integration, teleop scripts, docs, screenshots, and GIF demos.
+- [cr3-robot-description-assets](https://github.com/fslee2/cr3-robot-description-assets): MuJoCo XML / MJCF and URDF assets for CR3 + CRAFT simulation.
+- [Dobot-CraftHand](https://github.com/fslee2/Dobot-CraftHand): CRAFT hand and robot-control experiments.
+- [Lerobot_robomimic](https://github.com/fslee2/Lerobot_robomimic): robot learning and imitation-learning experiments.
+- [JetArm-Dummy](https://github.com/fslee2/JetArm-Dummy): master-slave teleoperation between JetArm and Dummy.
 
 ## Main Robotics Stack
 
@@ -56,16 +66,9 @@ Tools           GitHub, ROS2, uv, conda, WSL, Windows
 
 ## Recent Work
 
-The main recent work is centered on practical robot manipulation:
-
-- built and documented real-to-simulation abstractions for contact manipulation;
-- organized tactile manipulation visuals, contact observations, and force-safety results;
-- extracted and organized CR3 robot-description assets;
-- prepared reusable MuJoCo XML / MJCF entry points;
-- tested camera and keyboard teleoperation entry scripts;
-- documented handoff notes for Windows/WSL setup.
-
-Start here:
-
-- [CR3 + CRAFT Teleop Showcase](https://github.com/fslee2/cr3-craft-teleop-showcase)
-- [CR3 MuJoCo / URDF Assets](https://github.com/fslee2/cr3-robot-description-assets)
+- Prepared bimanual imitation-learning datasets and validation rollouts.
+- Extracted and organized CR3 robot-description assets.
+- Connected CR3 arm + CRAFT hand assets into DexJoCo scenes.
+- Built teleoperation scripts for camera and keyboard control.
+- Organized real robot contact-manipulation visuals and real-to-sim notes.
+- Documented Windows/WSL setup and project handoff notes.
