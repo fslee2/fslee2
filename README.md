@@ -1,43 +1,34 @@
 # Yujie Pang / fslee2
 
-Robotics, dexterous manipulation, teleoperation, and embodied AI experiments.
+Robotics, tactile manipulation, teleoperation, and embodied AI experiments.
 
-I am currently building practical robot teleoperation systems around MuJoCo, DexJoCo, ROS2, camera-based hand tracking, and dexterous robot hands.
+I am currently building practical robot manipulation systems around MuJoCo, ROS2, camera-based teleoperation, tactile contact control, and dexterous robot hands.
 
-## Visual Portfolio
+## Lab Robotics Portfolio
 
-### CR3 + CRAFT Teleoperation
+### Real Robot Setup
 
-![CR3 CRAFT teleoperation demo](assets/gallery/cr3_craft_x_axis_teleop.gif)
+![Real robot tactile manipulation setup](assets/lab/real_robot_setup.jpg)
 
-| CR3 + CRAFT shell scene | Multi-camera MuJoCo views |
+### Real-to-Sim Manipulation
+
+![Real-to-simulation abstraction for contact manipulation](assets/lab/real_to_sim_abstraction.jpg)
+
+| Simulation spawn setup | Contact observation |
 |---|---|
-| ![CR3 CRAFT shell scene](assets/gallery/cr3_craft_shell_preview.png) | ![CR3 CRAFT camera grid](assets/gallery/cr3_craft_camera_grid.png) |
+| ![Robot simulation spawn setup](assets/lab/robot_simulation_spawn.jpg) | ![Tactile contact closeup](assets/lab/tactile_contact_closeup.jpg) |
 
-### DexJoCo Task Scenes
+### Tactile Control Results
 
-| Bimanual assembly | Click-mouse task |
+| Touch coverage | Force-safety comparison |
 |---|---|
-| ![DexJoCo bimanual assembly](assets/gallery/dexjoco_bimanual_assembly.png) | ![DexJoCo click mouse task](assets/gallery/dexjoco_mouse_task.png) |
-
-| Hammer task | Plant task |
-|---|---|
-| ![DexJoCo hammer task](assets/gallery/dexjoco_hammer_task.png) | ![DexJoCo plant task](assets/gallery/dexjoco_plant_task.png) |
-
-### Engineering Artifacts
-
-| CR3 workspace analysis | Projection analysis |
-|---|---|
-| ![CR3 workspace analysis](assets/gallery/cr3_workspace_analysis.png) | ![CR3 workspace projections](assets/gallery/cr3_workspace_projections.png) |
-
-| Workstation CAD mockup |
-|---|
-| ![Workstation CAD mockup](assets/gallery/workstation_cad.jpg) |
+| ![Touch coverage distribution](assets/lab/touch_coverage_distribution.jpg) | ![Force safety comparison](assets/lab/force_safety_comparison.jpg) |
 
 ## Current Focus
 
-- CR3 robot arm and CRAFT dexterous hand simulation.
-- MuJoCo / DexJoCo task environments for robot teleoperation.
+- Real robot manipulation with tactile/contact feedback.
+- Real-to-simulation abstraction for contact-rich manipulation tasks.
+- MuJoCo task environments for robot teleoperation and policy testing.
 - Human input interfaces using cameras, keyboard control, and VR experiments.
 - Lightweight alternatives to heavy monocular 3D hand reconstruction.
 - Imitation learning and robot-control pipelines.
@@ -46,7 +37,7 @@ I am currently building practical robot teleoperation systems around MuJoCo, Dex
 
 | Project | What it contains | Stack |
 |---|---|---|
-| [cr3-craft-teleop-showcase](https://github.com/fslee2/cr3-craft-teleop-showcase) | CR3 + CRAFT DexJoCo integration, teleop scripts, docs, screenshots, and GIF demo | Python, MuJoCo, DexJoCo |
+| [cr3-craft-teleop-showcase](https://github.com/fslee2/cr3-craft-teleop-showcase) | CR3 + CRAFT DexJoCo integration, teleop scripts, and handoff notes | Python, MuJoCo, DexJoCo |
 | [cr3-robot-description-assets](https://github.com/fslee2/cr3-robot-description-assets) | MuJoCo XML / MJCF and URDF assets for CR3 + CRAFT simulation | MuJoCo, URDF, ROS2 |
 | [Dobot-CraftHand](https://github.com/fslee2/Dobot-CraftHand) | CRAFT hand and robot-control experiments | Python |
 | [Lerobot_robomimic](https://github.com/fslee2/Lerobot_robomimic) | Robot learning and imitation-learning experiments | Python |
@@ -65,14 +56,14 @@ Tools           GitHub, ROS2, uv, conda, WSL, Windows
 
 ## Recent Work
 
-The main recent work is the CR3 + CRAFT integration:
+The main recent work is centered on practical robot manipulation:
 
+- built and documented real-to-simulation abstractions for contact manipulation;
+- organized tactile manipulation visuals, contact observations, and force-safety results;
 - extracted and organized CR3 robot-description assets;
 - prepared reusable MuJoCo XML / MJCF entry points;
-- connected CR3 arm + CRAFT hand assets into DexJoCo scenes;
-- tested teleoperation entry scripts;
-- documented handoff notes and Windows/WSL setup.
-- collected project visuals into this profile as a lightweight robotics portfolio.
+- tested camera and keyboard teleoperation entry scripts;
+- documented handoff notes for Windows/WSL setup.
 
 Start here:
 
